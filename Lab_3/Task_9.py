@@ -9,7 +9,7 @@ need_money = 0  # количество денег, чтобы прожить 10 
 
 for i in range(months):
     need_money = need_money + spend
-    spend = spend * 1.03
+    spend *= 1 + increase
 
 print(round(need_money) - (salary * 10))
 
